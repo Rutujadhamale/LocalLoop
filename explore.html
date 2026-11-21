@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore | LocalLoop</title><link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><nav class="navbar container">
+  <a class="brand" href="index.html"><span class="brand-mark">L</span> LocalLoop</a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  <ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a class="active" href="explore.html">Explore</a></li><li><a href="about.html">About</a></li><li><a href="join.html">Join Us</a></li></ul>
+  <button class="theme-toggle" id="themeToggle" type="button">☾ Dark mode</button>
+</nav></header>
+<main class="container page-main">
+  <div class="page-intro"><p class="eyebrow">THE LOCAL DIRECTORY</p><h1>Explore your <span>local loop.</span></h1><p>Search activities and helpful services shared by your community.</p></div>
+  <div class="category-pills" id="categoryPills" role="tablist" aria-label="Filter by category">
+    <button class="pill active" type="button" data-category="all">All</button>
+    <button class="pill" type="button" data-category="activity">🎨 Activities</button>
+    <button class="pill" type="button" data-category="service">🛠️ Services</button>
+    <button class="pill" type="button" data-category="event">📅 Events</button>
+  </div>
+  <div class="explore-tools">
+    <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search events, services, or places..." aria-label="Search listings"></label>
+    <select id="categoryFilter" aria-label="Filter by category"><option value="all">All categories</option><option value="activity">Activities</option><option value="service">Services</option><option value="event">Events</option></select>
+  </div>
+  <p id="resultCount" class="result-count">Showing all local listings</p>
+  <div class="listing-grid" id="listingGrid">
+    <article class="listing-card" data-category="activity"><img src="images/art.jpg" alt="Art and craft"><div class="listing-content"><span class="tag">Activity</span><h3>Weekend Art Circle</h3><p>A relaxed painting and craft session for beginners.</p><div class="listing-meta">📍 Community Hall · Saturday, 4 PM</div></div></article>
+    <article class="listing-card" data-category="service"><img src="images/gardening.jpg" alt="Gardening service"><div class="listing-content"><span class="tag tag-green">Service</span><h3>Balcony Garden Help</h3><p>Get simple tips and help to start your own green corner.</p><div class="listing-meta">📍 Available nearby · By appointment</div></div></article>
+    <article class="listing-card" data-category="event"><img src="images/meetup.jpg" alt="Community meetup"><div class="listing-content"><span class="tag tag-purple">Event</span><h3>Neighbourhood Meetup</h3><p>Meet local people, exchange ideas, and make new friends.</p><div class="listing-meta">📍 Riverside Park · Sunday, 10 AM</div></div></article>
+    <article class="listing-card" data-category="service"><img src="images/tutor.jpg" alt="Learning and tutoring"><div class="listing-content"><span class="tag tag-green">Service</span><h3>Study Buddy Tutoring</h3><p>Friendly learning support for school students.</p><div class="listing-meta">📍 Online / Local · Weekdays</div></div></article>
+    <article class="listing-card" data-category="activity"><img src="images/walk.jpg" alt="Morning walk group"><div class="listing-content"><span class="tag">Activity</span><h3>Morning Walk Group</h3><p>Start the day with fresh air and a friendly walking group.</p><div class="listing-meta">📍 City Garden · Daily, 7 AM</div></div></article>
+    <article class="listing-card" data-category="event"><img src="images/market.jpg" alt="Local market"><div class="listing-content"><span class="tag tag-purple">Event</span><h3>Sunday Local Market</h3><p>Explore homemade food, plants, crafts, and local products.</p><div class="listing-meta">📍 Main Square · Sunday, 9 AM</div></div></article>
+    <article class="listing-card" data-category="activity"><img src="images/sketch.jpg" alt="Sketching club"><div class="listing-content"><span class="tag">Activity</span><h3>Sunset Sketching Club</h3><p>Draw together outdoors as the sun goes down — all skill levels welcome.</p><div class="listing-meta">📍 Riverside Park · Friday, 6 PM</div></div></article>
+    <article class="listing-card" data-category="service"><img src="images/bike.jpg" alt="Bike repair help"><div class="listing-content"><span class="tag tag-green">Service</span><h3>Bike Repair Help</h3><p>Flat tyres, gears, and brakes fixed by a neighbour who loves bikes.</p><div class="listing-meta">📍 Community Workshop · Saturday, 11 AM</div></div></article>
+    <article class="listing-card" data-category="event"><img src="images/potluck.jpg" alt="Community potluck"><div class="listing-content"><span class="tag tag-purple">Event</span><h3>Neighbourhood Potluck</h3><p>Bring a dish, share stories, and meet the people on your street.</p><div class="listing-meta">📍 Community Hall · Friday, 7 PM</div></div></article>
+    <article class="listing-card" data-category="activity"><img src="images/hike.jpg" alt="Group hike"><div class="listing-content"><span class="tag">Activity</span><h3>Weekend Hill Walk</h3><p>A guided group hike with stunning views — beginners friendly.</p><div class="listing-meta">📍 North Trailhead · Sunday, 8 AM</div></div></article>
+    <article class="listing-card" data-category="service"><img src="images/plantcare.jpg" alt="Plant care visits"><div class="listing-content"><span class="tag tag-green">Service</span><h3>Plant Care Visits</h3><p>Watering, repotting, and plant advice while you’re away.</p><div class="listing-meta">📍 Available citywide · By appointment</div></div></article>
+    <article class="listing-card" data-category="event"><img src="images/movie.jpg" alt="Outdoor movie night"><div class="listing-content"><span class="tag tag-purple">Event</span><h3>Outdoor Movie Night</h3><p>Family-friendly film under the stars with popcorn and blankets.</p><div class="listing-meta">📍 Main Square · Saturday, 8 PM</div></div></article>
+    <article class="listing-card" data-category="activity"><img src="images/pottery.jpg" alt="Pottery class"><div class="listing-content"><span class="tag">Activity</span><h3>Pottery Basics</h3><p>Learn wheel-throwing and glazing in a cosy local studio.</p><div class="listing-meta">📍 Clay Studio · Wednesday, 6:30 PM</div></div></article>
+    <article class="listing-card" data-category="service"><img src="images/tech.jpg" alt="Tech help for seniors"><div class="listing-content"><span class="tag tag-green">Service</span><h3>Tech Help for Seniors</h3><p>Patient one-on-one help with phones, video calls, and email.</p><div class="listing-meta">📍 Home visits · Mon–Thu</div></div></article>
+  </div>
+  <p id="emptyMessage" class="empty-message" hidden>No matching listings found. Try another search.</p>
+  <section class="table-section"><div class="section-heading"><div><p class="eyebrow">QUICK VIEW</p><h2>This week in the neighbourhood</h2></div></div>
+    <div class="table-wrap"><table><thead><tr><th>Day</th><th>Activity</th><th>Time</th><th>Location</th></tr></thead><tbody>
+      <tr><td>Saturday</td><td>Weekend Art Circle</td><td>4:00 PM</td><td>Community Hall</td></tr>
+      <tr><td>Sunday</td><td>Neighbourhood Meetup</td><td>10:00 AM</td><td>Riverside Park</td></tr>
+      <tr><td>Sunday</td><td>Sunday Local Market</td><td>9:00 AM</td><td>Main Square</td></tr>
+      <tr><td>Friday</td><td>Sunset Sketching Club</td><td>6:00 PM</td><td>Riverside Park</td></tr>
+      <tr><td>Friday</td><td>Neighbourhood Potluck</td><td>7:00 PM</td><td>Community Hall</td></tr>
+      <tr><td>Saturday</td><td>Outdoor Movie Night</td><td>8:00 PM</td><td>Main Square</td></tr>
+      <tr><td>Wednesday</td><td>Pottery Basics</td><td>6:30 PM</td><td>Clay Studio</td></tr>
+    </tbody></table></div>
+  </section>
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="brand" href="index.html"><span class="brand-mark">L</span> LocalLoop</a><p>Small connections. Stronger communities.</p><span>© 2026 LocalLoop</span></div></footer>
+</body></html>
